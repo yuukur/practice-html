@@ -260,6 +260,7 @@ a:link, a:visited, a:hover, a:active {
 .ranking {
     margin-bottom: 30px;
     list-style-type: none;
+    counter-reset: rankig;
 }
 .ranking .ranking-item {
     margin-top: 15px;
@@ -314,4 +315,12 @@ a:link, a:visited, a:hover, a:active {
 }
 .ranking .ranking-item:nth-of-type(3) .order {
     background-color: #a0541a;
+}
+.ranking .order::before {
+    content: '1';
+    display: inline-block;
+    font-size: 1.0rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
