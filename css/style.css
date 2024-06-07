@@ -260,7 +260,7 @@ a:link, a:visited, a:hover, a:active {
 .ranking {
     margin-bottom: 30px;
     list-style-type: none;
-    counter-reset: rankig;
+    counter-reset: ranking;
 }
 .ranking .ranking-item {
     margin-top: 15px;
@@ -293,6 +293,7 @@ a:link, a:visited, a:hover, a:active {
     border: 1px solid #ccc;
     color: #aaa;
     vertical-align: 20px;
+    text-align: center;
     font-weight: bold;
     line-height: 16px;
     -webkit-transform: rotate(45deg);
@@ -323,4 +324,6 @@ a:link, a:visited, a:hover, a:active {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    content: counter(ranking);
+    counter-increment: ranking;
 }
